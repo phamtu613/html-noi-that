@@ -1,0 +1,25 @@
+.pagi {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  &-item {
+    margin: 0 0.3rem;
+    padding: 1rem 1.5rem;
+    font-size: 1.4rem;
+    color: $color-medium-gray;
+    cursor: pointer;
+    @include transition;
+    border-radius: 0.6rem;
+    font-family: "Roboto", sans-serif;
+    &.is-disabled {
+      color: $color-light-gray;
+      cursor: not-allowed;
+    }
+    &:hover,
+    &.is-active {
+      color: #fff;
+      background-color: #049cd6;
+      border-radius: 0.6rem;
+    }
+  }
+}

@@ -1,0 +1,30 @@
+.create-time {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0;
+  span {
+    padding-left: 1rem;
+    font-family: "Open Sans";
+    font-size: 1.3rem;
+    color: #535353;
+  }
+}
+
+.create-time-post {
+  color: $color-text-third;
+  padding: 1.5rem 0 1rem;
+  margin-bottom: 0;
+  display: flex;
+  align-items: center;
+  line-height: 3rem;
+  img {
+    @include size(1.5rem);
+  }
+  span {
+    padding-left: 0.5rem;
+    font-size: 1.2rem;
+    line-height: calc(22 / 12);
+    color: $color-text-third;
+    font-weight: 400;
+  }
+}

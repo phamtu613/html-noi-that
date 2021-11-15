@@ -1,0 +1,69 @@
+@font-face {
+  font-family: "Segoe UI";
+  src: url("../../libs/fonts/SegoeUI-BoldItalic.woff2") format("woff2"),
+    url("../../libs/fonts/SegoeUI-BoldItalic.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Segoe UI";
+  src: url("../../libs/fonts/SegoeUI-Bold.woff2") format("woff2"),
+    url("../../libs/fonts/SegoeUI-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Segoe UI";
+  src: url("../../libs/fonts/SegoeUI.woff2") format("woff2"),
+    url("../../libs/fonts/SegoeUI.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Segoe UI";
+  src: url("../../libs/fonts/SegoeUI-Italic.woff2") format("woff2"),
+    url("../../libs/fonts/SegoeUI-Italic.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+
+  @include respond(tab-land) {
+    // font-size: 56.25%; //1rem =9px
+    font-size: 60%;
+  }
+
+  @include respond(tab-port) {
+    // font-size: 50%; //1 rem = 8px
+    font-size: 55.5%;
+  }
+
+  @include respond(big-desktop) {
+    font-size: 75%; //1rem = 12px
+  }
+}
+body {
+  font-family: "Segoe UI" !important;
+  font-weight: normal;
+  // font-weight: bold;
+  //   font-style: normal;
+  font-size: 1.6rem;
+  line-height: 1;
+  color: $color-text-secondary;
+}

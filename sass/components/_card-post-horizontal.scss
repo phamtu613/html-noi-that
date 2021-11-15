@@ -1,0 +1,29 @@
+.card-post-horizontal {
+  display: flex;
+  margin-bottom: 3rem;
+  .thumbnail {
+    display: block;
+    flex-shrink: 0;
+    img {
+      width: 100%;
+      max-width: 11rem;
+      height: 7rem;
+    }
+  }
+  .content {
+    padding: 0.2rem 0 0.2rem 1.6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    .title {
+      font-size: 1.4rem;
+      color: #262b30;
+      line-height: calc(19 / 14);
+      display: block;
+      text-decoration: none;
+      &:hover {
+        color: $primary-color;
+      }
+    }
+  }
+}
