@@ -1,15 +1,17 @@
 .btn-text {
   background-color: $primary-color;
-  color: #fff;
   @include transition;
   border: none;
-  min-width: 14.2rem;
-  height: 4.4rem;
+  min-width: 142px;
+  height: 44px;
   text-align: center;
-  border-radius: 2rem;
-  font-size: 1.4rem;
+  border-radius: 20px;
+  a {
+  color: #fff;
+  font-size: 14px;
   font-weight: 600;
-  line-height: calc(24 / 14);
+  line-height: 24px;
+  }
   &:hover,
   &:focus {
     outline: none;
@@ -17,13 +19,13 @@
   }
 }
 .btn-text-xs {
-  min-width: 5.2rem;
-  height: 2.4rem;
+  min-width: 52px;
+  height: 24px;
   text-align: center;
-  border-radius: 0.4rem;
+  border-radius: 4px;
   background-color: #eaeaea;
   color: #54595e;
-  font-size: 1.2rem;
+  font-size: 12px;
   font-weight: 400;
   font-family: "Roboto", sans-serif;
   border: 0;

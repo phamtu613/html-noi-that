@@ -4,7 +4,7 @@ $('.project-relative-slider').owlCarousel({
   autoplay: true,
   autoplayTimeout: 993000,
   nav: true,
-  navText: ['<i class="fa fa-arrow-left" aria-hidden="true"></i>', '<i class="fa fa-arrow-right" aria-hidden="true"></i>'],
+  navText: ['<img srcset="../img/arrow-left-gray.png 2x" alt="" />', '<img srcset="../img/arrow-right.png 2x" alt="" />'],
   responsive: {
     0: {
       items: 1
@@ -14,6 +14,25 @@ $('.project-relative-slider').owlCarousel({
     },
     1000: {
       items: 3
+    }
+  }
+})
+$('.customer-slider').owlCarousel({
+  loop: true,
+  margin: 30,
+  autoplay: true,
+  autoplayTimeout: 993000,
+  nav: true,
+  dots: true,
+  responsive: {
+    0: {
+      items: 1
+    },
+    600: {
+      items: 3
+    },
+    1000: {
+      items: 5
     }
   }
 })

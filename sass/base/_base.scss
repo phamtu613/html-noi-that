@@ -1,5 +1,8 @@
 a {
   text-decoration: none;
+  &:hover {
+    text-decoration: none;
+  }
 }
 img {
   display: block;

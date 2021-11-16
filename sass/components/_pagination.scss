@@ -2,24 +2,35 @@
   display: flex;
   justify-content: center;
   margin: 0;
+  margin-bottom: 30px;
   &-item {
-    margin: 0 0.3rem;
-    padding: 1rem 1.5rem;
-    font-size: 1.4rem;
-    color: $color-medium-gray;
+    margin: 0 3px;
+    text-align: center;
     cursor: pointer;
     @include transition;
-    border-radius: 0.6rem;
-    font-family: "Roboto", sans-serif;
+    a {
+      font-family: "Roboto", sans-serif;
+      font-size: 14px;
+      color: $color-medium-gray;
+      line-height: 18px;
+      padding: 10px 15px;
+      border-radius: 06px;
+      display: block;
+    }
     &.is-disabled {
       color: $color-light-gray;
-      cursor: not-allowed;
+      pointer-events: none;
+      i {
+        color: #C4C4C4
+      }
     }
     &:hover,
     &.is-active {
-      color: #fff;
-      background-color: #049cd6;
-      border-radius: 0.6rem;
+      a {
+        color: #fff;
+        background-color: #049cd6;
+        
+      }
     }
   }
 }

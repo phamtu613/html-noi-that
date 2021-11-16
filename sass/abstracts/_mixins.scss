@@ -88,7 +88,7 @@
   word-break: break-word;
 }
 
-@mixin touchSlider($width: 80%, $gap: 2.5rem, $padding: 1rem) {
+@mixin touchSlider($width: 80%, $gap: 25px, $padding: 10px) {
   display: grid !important;
   justify-content: flex-start !important;
   grid-auto-columns: $width;
@@ -119,29 +119,6 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-}
-
-@mixin respond($breakpoint) {
-  @if $breakpoint == phone {
-    @media (max-width: 600px) {
-      @content;
-    } //600px
-  }
-  @if $breakpoint == tab-port {
-    @media (max-width: 900px) {
-      @content;
-    } //900px
-  }
-  @if $breakpoint == tab-land {
-    @media (max-width: 1200px) {
-      @content;
-    } //1200px
-  }
-  @if $breakpoint == big-desktop {
-    @media (min-width: 1800px) {
-      @content;
-    } //1800px
-  }
 }
 
 @mixin transition {

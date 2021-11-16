@@ -5,50 +5,44 @@
     justify-content: center;
     li {
       a {
-        font-size: 1.8rem;
+        font-size: 18px;
         color: $color-light;
-        padding: 0rem 2.5rem;
+        padding: 0 25px;
         display: block;
         position: relative;
-        transition: all 0.2s linear;
+        line-height: 24px;
+        @include transition;
         &::after {
           content: "";
           position: absolute;
-          top: 0rem;
-          right: -0.2px;
-          width: 0.1rem;
-          height: 1.8rem;
+          top: 2px;
+          right: -2px;
+          width: 1px;
+          height: 20px;
           background-color: $boder-light;
-          transition: all 0.2s linear;
+          @include transition;
+        }
+        &::before {
+          content: "";
+          position: absolute;
+          top: 30px;
+          width: 50px;
+          height: 2px;
+          background-color: transparent;
+          left: 50%;
+          transform: translateX(-50%);
+          @include transition;
+        }
+        &.active,
+        &:hover {
+          color: $color-dark;
+          &::before {
+            @include transition;
+            background-color: $primary-color;
+          }
         }
         &.active {
-          color: $color-dark;
-          @include transition;
-          &::before {
-            content: "";
-            position: absolute;
-            top: 2.8rem;
-            width: 5rem;
-            height: 0.2rem;
-            background-color: $primary-color;
-            left: 50%;
-            transform: translateX(-50%);
-            @include transition;
-          }
-        }
-        &:hover {
-          text-decoration: none;
-          color: $color-dark;
-          &::before {
-            content: "";
-            position: absolute;
-            top: 3rem;
-            width: 5rem;
-            height: 0.2rem;
-            background-color: $primary-color;
-            left: 50%;
-            transform: translateX(-50%);
-          }
+          pointer-events: none;
         }
       }
       &:last-child {
@@ -59,8 +53,8 @@
     }
   }
 }
-.main-content {
-  margin-top: 6rem;
+.list-project {
+  margin-top: 60px;
 }
 
 @include maxWidth(575px) {
@@ -69,24 +63,24 @@
       flex-wrap: wrap;
       li {
         a {
-          max-width: 14rem;
-          margin-bottom: 2.5rem;
-          padding: 0rem 1.7rem;
+          max-width: 140px;
+          margin-bottom: 25px;
+          padding: 0 17px;
           text-align: center;
           &.active {
             &::before {
-              top: 2.7rem;
-              width: 4.5rem;
+              top: 27px;
+              width: 45px;
             }
           }
         }
       }
     }
   }
-  .main-content {
-    margin-top: 2rem;
+  .list-project {
+    margin-top: 20px;
     .item {
-      margin-bottom: 3rem;
+      margin-bottom: 30px;
     }
   }
 }

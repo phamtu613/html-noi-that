@@ -1,25 +1,25 @@
 .wp-breadcumb {
   background-color: #f1f7fa;
-  margin-top: 12.7rem;
-  margin-bottom: 5rem;
+  margin-top: 127px;
+  margin-bottom: 50px;
   .breadcrumb {
     background-color: transparent;
     &-item + .breadcrumb-item::before {
       content: "\f054";
       font-family: "FontAwesome";
-      padding: 0 1.3rem;
-      font-size: 1rem;
+      padding: 0 13px;
+      font-size: 10px;
     }
     &-item {
-      height: 4.4rem;
-      line-height: 4.4rem;
+      height: 44px;
+      line-height: 44px;
       padding-left: 0;
       img {
         display: unset;
-        transform: translateY(-0.3rem);
+        transform: translateY(-3px);
       }
       a {
-        font-size: 1.4rem;
+        font-size: 14px;
         color: #0f629a;
       }
     }
@@ -31,26 +31,26 @@
 
 .content {
   &-title {
-    font-size: 4.8rem;
+    font-size: 48px;
     font-weight: bold;
     color: #262b30;
-    margin-bottom: 1rem;
-    line-height: 6.4rem;
+    margin-bottom: 10px;
+    line-height: 64px;
   }
   &-desc {
-    margin: 3rem 0 2.5rem;
+    margin: 30px 0 25px;
     p {
       font-weight: bold;
       color: #262b30;
-      margin-bottom: 1.5rem;
-      font-size: 1.5rem;
+      margin-bottom: 14px;
+      font-size: 15px;
       span {
         font-weight: normal;
       }
     }
     .auth {
-      margin-bottom: 2.5rem;
-      font-size: 1.8rem;
+      margin-bottom: 23px;
+      font-size: 18px;
     }
   }
   &-main {
@@ -59,47 +59,47 @@
       object-fit: cover;
     }
     p {
-      font-size: 1.4rem;
-      line-height: 2.8rem;
-      margin-bottom: 2.4rem;
+      font-size: 14px;
+      line-height: 28px;
+      margin-bottom: 24px;
     }
     h4 {
       font-weight: bold;
       font-size: 18px;
       line-height: 28px;
-      margin-bottom: 1.2rem;
+      margin-bottom: 12px;
     }
     img {
-      margin: 3rem 0;
+      margin: 30px 0;
     }
   }
 }
 .sidebar {
-  margin-top: 2rem;
+  margin-top: 20px;
   &-title {
     color: #262b30;
-    font-size: 2.8rem;
+    font-size: 28px;
     font-weight: 600;
-    line-height: calc(37 / 28);
-    padding-bottom: 1.7rem;
+    line-height: 37px;
+    padding-bottom: 15px;
     border-bottom: 1px solid #d6d6d6;
-    margin-bottom: 1.6rem;
+    margin-bottom: 20px;
   }
   .see-more {
-    margin-top: 3.8rem;
+    margin-top: 38px;
   }
 }
 
 .project-relative {
   // margin-top: 136px;
-  margin-top: 3rem;
+  margin-top: 30px;
   &-title {
     color: #262b30;
     font-style: normal;
     font-weight: bold;
-    font-size: 2.8rem;
-    line-height: 3.7rem;
-    margin-bottom: 3rem;
+    font-size: 28px;
+    line-height: 37px;
+    margin-bottom: 30px;
   }
   &-slider {
     .owl-nav {
@@ -110,33 +110,27 @@
       transform: translateY(-50%);
       margin: 0;
       .owl-prev {
-        left: -7.8rem;
-        position: absolute;
-        color: #230b34 !important;
-        background: #f0f3f4 !important;
-        width: 4.4rem;
-        height: 4.4rem;
-        border-radius: 50% !important;
-        &:focus {
-          outline: none;
-        }
-        &:hover {
-          background: #d9d9d9 !important;
-        }
+        left: -78px;
       }
       .owl-next {
-        right: -7.8rem;
+        right: -78px;
+      }
+      .owl-prev,
+      .owl-next {
         position: absolute;
-        color: #230b34 !important;
         background: #f0f3f4 !important;
-        width: 4.4rem;
-        height: 4.4rem;
+        width: 44px;
+        height: 44px;
         border-radius: 50% !important;
+        color: #230b34 !important;
         &:focus {
           outline: none;
         }
         &:hover {
           background: #d9d9d9 !important;
+        }
+        img {
+          margin: 0 auto;
         }
       }
     }
@@ -144,7 +138,7 @@
       display: block !important;
       margin-top: 0 !important;
       position: relative;
-      top: -2rem;
+      top: -20px;
       .owl-dot {
         &:focus {
           outline: none;
@@ -156,7 +150,7 @@
           }
         }
         span {
-          @include size(0.8rem);
+          @include size(8px);
         }
       }
     }
@@ -164,11 +158,11 @@
 }
 @include maxWidth(575px) {
   .wp-breadcumb {
-    margin-bottom: 3rem;
+    margin-bottom: 30px;
   }
   .content {
     &-title {
-      font-size: 4rem;
+      font-size: 40px;
     }
   }
   .project-relative {
