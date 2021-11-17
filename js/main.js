@@ -4,7 +4,7 @@ $('.project-relative-slider').owlCarousel({
   autoplay: true,
   autoplayTimeout: 993000,
   nav: true,
-  navText: ['<img srcset="../img/arrow-left-gray.png 2x" alt="" />', '<img srcset="../img/arrow-right.png 2x" alt="" />'],
+  navText: ['<img srcset="./img/arrow-left-gray.png 2x" alt="" />', '<img srcset="./img/arrow-right.png 2x" alt="" />'],
   responsive: {
     0: {
       items: 2
@@ -42,7 +42,7 @@ $('.new-relative-slider').owlCarousel({
   autoplay: true,
   autoplayTimeout: 993000,
   nav: true,
-  navText: ['<img srcset="../img/arrow-left-gray.png 2x" alt="" />', '<img srcset="../img/arrow-right.png 2x" alt="" />'],
+  navText: ['<img srcset="./img/arrow-left-gray.png 2x" alt="" />', '<img srcset="./img/arrow-right.png 2x" alt="" />'],
   responsive: {
     0: {
       items: 2
@@ -61,7 +61,7 @@ $('.room-relative-slider').owlCarousel({
   autoplay: true,
   autoplayTimeout: 993000,
   nav: true,
-  navText: ['<img srcset="../img/arrow-left-gray.png 2x" alt="" />', '<img srcset="../img/arrow-right.png 2x" alt="" />'],
+  navText: ['<img srcset="./img/arrow-left-gray.png 2x" alt="" />', '<img srcset="./img/arrow-right.png 2x" alt="" />'],
   responsive: {
     0: {
       items: 2
