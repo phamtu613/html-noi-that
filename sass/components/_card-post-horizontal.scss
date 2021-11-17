@@ -17,7 +17,7 @@
     justify-content: space-between;
     .title {
       font-size: 14px;
-      color: #262b30;
+      color: $color-text-fourth;
       line-height: 19px;
       display: block;
       @include textClamp(2);
