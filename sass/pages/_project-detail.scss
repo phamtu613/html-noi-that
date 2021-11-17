@@ -156,19 +156,43 @@
     }
   }
 }
-@include maxWidth(575px) {
+@include maxWidth(1024px) {
   .wp-breadcumb {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
   }
   .content {
     &-title {
       font-size: 40px;
+      line-height: 50px;
     }
   }
   .project-relative {
     &-slider {
       .owl-nav {
         display: none !important;
+      }
+    }
+  }
+}
+@include maxWidth(575px) {
+  .content {
+    &-title {
+      font-size: 35px;
+    }
+  }
+  .project-relative {
+    margin-top: 40px;
+    &-title {
+      font-size: 25px;
+      line-height: 37px;
+      margin-bottom: 20px;
+    }
+    &-slider {
+      .card-post {
+        img {
+          height: 190px;
+          object-fit: cover;
+        }
       }
     }
   }

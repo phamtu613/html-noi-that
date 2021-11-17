@@ -1,0 +1,106 @@
+.content.new-inner {
+  .content-desc {
+    margin: 24px 0 0;
+    font-size: 14px;
+    line-height: 28px;
+    font-style: italic;
+    color: #606870;
+  }
+  img {
+    margin: 30px 0;
+  }
+  .content-main {
+    p {
+      margin-bottom: 12px;
+    }
+  }
+}
+
+.new-relative {
+  // margin-top: 2180px;
+  margin-top: 30px;
+  &-title {
+    color: #262b30;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 37px;
+    margin-bottom: 30px;
+  }
+  &-slider {
+    .card-post {
+      .thumbnail {
+        img {
+          height: 240px;
+        }
+      }
+      .time {
+        padding: 20px 0 4px;
+      }
+      .title {
+        font-family: "Roboto", sans-serif;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 27px;
+        margin-bottom: 18px;
+      }
+      .desc {
+        font-family: "Roboto", sans-serif;
+        line-height: 22px;
+        color: #3c4349;
+      }
+    }
+    .owl-nav {
+      display: block !important;
+      position: absolute;
+      top: 35%;
+      width: 100%;
+      transform: translateY(-50%);
+      margin: 0;
+      .owl-prev {
+        left: -78px;
+      }
+      .owl-next {
+        right: -78px;
+      }
+      .owl-prev,
+      .owl-next {
+        position: absolute;
+        background: #f0f3f4 !important;
+        width: 44px;
+        height: 44px;
+        border-radius: 50% !important;
+        color: #230b34 !important;
+        &:focus {
+          outline: none;
+        }
+        &:hover {
+          background: #d9d9d9 !important;
+        }
+        img {
+          margin: 0 auto;
+        }
+      }
+    }
+    .owl-dots {
+      display: block !important;
+      margin-top: 0 !important;
+      position: relative;
+      top: -20px;
+      .owl-dot {
+        &:focus {
+          outline: none;
+        }
+        &.active,
+        &:hover {
+          span {
+            background-color: $primary-color !important;
+          }
+        }
+        span {
+          @include size(8px);
+        }
+      }
+    }
+  }
+}

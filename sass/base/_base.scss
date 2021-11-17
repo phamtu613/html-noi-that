@@ -9,9 +9,10 @@ img {
   max-width: 100%;
 }
 input,
-button {
+button,
+textarea {
   outline: none;
-  // font-family: $primary-font;
+  font-family: "Segoe UI";
   line-height: 1;
 }
 button {
