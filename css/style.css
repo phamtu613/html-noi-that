@@ -98,22 +98,6 @@ body {
   height: 100%;
   height: 100vh; }
 
-.text {
-  font-size: 15px;
-  font-style: italic;
-  line-height: 1.4; }
-
-.text--light {
-  font-weight: 300; }
-
-.text--normal {
-  font-style: normal; }
-
-.paragraph {
-  font-size: 16px; }
-  .paragraph:not(:last-child) {
-    margin-bottom: 30px; }
-
 .br-20 {
   border-radius: 20px; }
   .br-20 img {
@@ -908,10 +892,6 @@ header {
   box-shadow: 0px 4px 26px rgba(0, 0, 0, 0.16);
   padding: 50px; }
   .contact-form .title {
-    font-weight: bold;
-    font-size: 26px;
-    line-height: 35px;
-    color: #2c3133;
     margin-bottom: 12px; }
   .contact-form .sologan {
     font-size: 14px;
@@ -974,12 +954,7 @@ header {
 .wp-map {
   margin: 100px 0 105px; }
   .wp-map .title {
-    font-weight: bold;
-    font-size: 26px;
-    line-height: 35px;
-    color: #2c3133;
-    margin-bottom: 50px;
-    text-align: center; }
+    margin-bottom: 50px; }
 
 @media screen and (max-width: 575px) {
   .bg-contact {
