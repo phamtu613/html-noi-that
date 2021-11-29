@@ -1,213 +1,102 @@
-.view-detail {
-  color: #1d71b9;
-  font-family: "Roboto", sans-serif;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 18px;
-  max-width: 130px;
-  img {
-    display: inline;
-    padding-left: 8px;
-    @include size(auto);
+.news-wrapper {
+  margin-bottom: 100px;
+  .container {
+    max-width: 1210px;
   }
-  &:hover {
-    color: #0d9dd3;
+  .news-head {
+    position: relative;
+    padding-top: 83px;
+    .title-big {
+      margin: 0 0 22px;
+    }
+    .slogan {
+      line-height: 30px;
+      text-align: center;
+      margin-bottom: 0;
+    }
+    img {
+      position: absolute;
+      top: -29px;
+      left: 50%;
+      transform: rotate(180deg) translateX(50%);
+      z-index: -1;
+    }
   }
-}
-.wp-newest {
-  .title-main {
+  .newest {
+    margin: 100px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &-text {
+      width: 515px;
+      .title {
+        margin-bottom: 20px;
+        a {
+          font-size: 30px;
+          line-height: 37px;
+          color: $color-text-primary;
+          &:hover {
+            color: $secondary-color;
+          }
+        }
+      }
+      .desc {
+        font-weight: 300;
+        font-size: 17px;
+        line-height: 30px;
+        color: $color-text-third;
+      }
+    }
+    &-thumbnail {
+      display: block;
+      width: 565px;
+      height: 350px;
+      flex-shrink: 0;
+      img {
+        height: 100%;
+        width: 100%;
+        border-radius: 5px;
+      }
+    }
+  }
+  .new-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border-bottom: 1px solid $color-medium-gray;
     margin-bottom: 50px;
   }
-  &-inner {
-    display: flex;
-  }
-  .thumbnail {
-    display: block;
-    margin-right: 15px;
-    width: 630px;
-    flex-shrink: 0;
-    img {
-      width: 100%;
-      height: 410px;
-      max-width: 630px;
-      object-fit: cover;
-    }
-  }
-  &-content {
-    display: flex;
-    height: 100%;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-  .btn-newest {
-    margin-bottom: 20px;
-  }
-  .time-newest {
-    padding: 0;
-    img {
-      @include size(15px);
-    }
-    span {
-      font-family: "Segoe UI";
-      font-size: 12px;
-      line-height: 12px;
-      color: #4d555c;
-      padding-left: 8px;
-    }
-  }
-  .title {
-    font-family: "Roboto", sans-serif;
-    color: $color-text-primary;
-    font-weight: 500;
-    font-size: 32px;
-    line-height: 42px;
-    margin-bottom: 20px;
-    margin-top: 13px;
-    display: block;
-    @include transition;
-    &:hover {
-      color: $primary-color;
-    }
-  }
-  .desc {
-    font-family: "Roboto", sans-serif;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 26px;
-    color: #3c4349;
-  }
-}
-.list-new {
-  margin-top: 50px;
-  .card-post {
-    .thumbnail {
-      img {
-        height: 240px;
-      }
-    }
-    .time {
-      padding-top: 20px;
-      padding-bottom: 5px;
-      span {
-        padding-left: 12px;
-      }
-    }
-    .title {
-      font-size: 18px;
-      font-weight: 500;
-      line-height: 27px;
-      color: #000;
-      font-family: "Roboto", sans-serif;
-      margin-bottom: 18px;
-    }
-    .desc {
-      font-family: "Roboto", sans-serif;
-      line-height: 22px;
-      margin-bottom: 10px;
-    }
-  }
-}
-.pagi.pagi-list-new {
-  transform: translateY(-12px);
-  margin-bottom: 120px;
-}
-.customer {
-  padding-bottom: 150px;
-  &-item {
-    background: #ffffff;
-    border: 1px solid #e2e2e2;
-    border-radius: 12px;
-    height: 120px;
-    img {
-      @include size(auto);
-      @include absCenter;
-    }
-  }
-  .owl-dots {
-    display: block !important;
-    margin-top: 0 !important;
-    position: relative;
-    top: 25px;
-    .owl-dot {
-      &:focus {
-        outline: none;
-      }
-      &.active,
-      &:hover {
-        span {
-          background-color: $primary-color !important;
-        }
-      }
-      span {
-        @include size(8px);
-      }
-    }
-  }
-}
-@include maxWidth(1024px) {
-  .wp-newest {
-    .title-main {
-      margin-bottom: 30px;
-    }
-    &-inner {
-      flex-wrap: wrap;
-    }
-    .thumbnail {
-      margin-right: 0;
-      width: 100%;
-      img {
-        width: 100%;
-        height: 500px;
-        max-width: 100%;
-      }
-    }
-    &-content {
-      margin-top: 20px;
+  .new-item {
+    width: calc(33.33% - 33.33px);
+    margin-bottom: 50px;
+    &-thumbnail {
       display: block;
-    }
-    .btn-newest {
-      margin-bottom: 10px;
-    }
-    .title {
-      font-size: 27px;
-    }
-  }
-  .list-new {
-    margin-top: 35px;
-    .card-post {
-      margin-bottom: 25px;
-      .thumbnail {
-        border-radius: 15px;
-        img {
-          border-radius: 15px;
-          height: 200px;
-        }
-      }
-      .time {
-        padding-top: 10px;
-      }
-      .title {
-        margin-bottom: 10px;
-      }
-    }
-  }
-  .pagi.pagi-list-new {
-    transform: translateY(0);
-    margin-bottom: 60px;
-  }
-  .customer {
-    &-item {
-      height: 100px;
-    }
-  }
-}
-@include maxWidth(575px) {
-  .wp-newest {
-    .thumbnail {
       img {
-        width: 100%;
-        height: 280px;
-        max-width: 100%;
+        border-radius: 5px;
+      }
+    }
+    &-create {
+      font-size: 13px;
+      line-height: 16px;
+      letter-spacing: -0.05em;
+      text-transform: uppercase;
+      color: $color-text-secondary;
+      margin: 17px 0;
+      padding-left: 10px;
+      border-left: 3px solid $secondary-color;
+    }
+    &-title {
+      margin-bottom: 0;
+      @include textClamp(2);
+      a {
+        font-size: 18px;
+        line-height: 22px;
+        color: $color-text-primary;
+        display: block;
+        height: 48px;
+        &:hover {
+          color: $secondary-color;
+        }
       }
     }
   }

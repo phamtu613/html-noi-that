@@ -5,282 +5,295 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <title>PAGE CHI TIET TIN TUC</title>
+  <title>New detail page</title>
   <link rel="stylesheet" href="./css/reset.css" />
-  <link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css" />
-  <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css" />
+  <!-- <link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css" /> -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
   <!-- font -->
-  <link rel="preload" href="./libs//fonts/SegoeUI-BoldItalic.woff2" as="font" type="font/woff2" crossorigin />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,500;0,600;0,700;1,300&family=Roboto:wght@300;400;500;700&display=swap"
-    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@300;500;600;700&display=swap"
+    rel="stylesheet" />
 
   <link rel="stylesheet" href="css/style.css" />
-  <link rel="stylesheet" href="libs/OwlCarousel/assets/owl.carousel.min.css">
-  <link rel="stylesheet" href="libs/OwlCarousel/assets/owl.theme.default.min.css">
-  <link rel="stylesheet" href="libs/OwlCarousel/assets/owl.theme.green.min.css">
-
+  <link rel="stylesheet" href="libs/OwlCarousel/assets/owl.carousel.min.css" />
+  <link rel="stylesheet" href="libs/OwlCarousel/assets/owl.theme.default.min.css" />
+  <link rel="stylesheet" href="libs/OwlCarousel/assets/owl.theme.green.min.css" />
 </head>
 
 <body>
   <div class="wrapper">
-    <header class="header"></header>
-    <main class="wp-content">
-      <div class="wp-breadcumb">
-        <nav aria-label="breadcrumb">
-          <div class="container">
-            <ol class="breadcrumb p-0 mb-0">
-              <li class="breadcrumb-item"><a href=""><img srcset="./img/home.png 2x" alt=""></a></li>
-              <li class="breadcrumb-item"><a href="#">Tin tức</a></li>
-              <li class="breadcrumb-item active" aria-current="page">Tin tức chi tiết</li>
-            </ol>
+    <header class="header">
+      <nav class="header-nav ">
+        <div class="header-nav-wp">
+          <div class="header-nav-inner">
+            <div class="header-nav-menu">
+              <i class="fal fa-bars icon-header-menu" aria-hidden="true"></i>
+              <span>MENU</span>
+            </div>
+            <div class="header-nav-logo"></div>
+            <div class="header-block">
+              <i class="fal fa-user header-block-user icon-header-menu"></i>
+              <i class="
+                    fal
+                    fa-shopping-cart
+                    icon-header-menu
+                  "></i>
+              <span class="header-block-lang mr-0">VI
+                <div class="list-lang">
+                  <span class="active">VI</span>
+                  <span>EN</span>
+                </div>
+              </span>
+            </div>
           </div>
-        </nav>
+        </div>
+        <div class="owl-carousel owl-theme slide-header-home">
+          <div class="item">
+            <img src="./img/slide-home-1.png" alt="" />
+          </div>
+          <div class="item">
+            <img src="https://source.unsplash.com/random" alt="" />
+          </div>
+          <div class="item">
+            <img src="https://source.unsplash.com/random" alt="" />
+          </div>
+          <div class="item">
+            <img src="https://source.unsplash.com/random" alt="" />
+          </div>
+        </div>
+        <div class="header-nav-title">
+          <h1>Chúng tôi luôn cung cấp những sản phẩm tốt nhất.</h1>
+          <button class="button-primary"><a href="">KHÁM PHÁ</a></button>
+        </div>
+        <div class="header-social">
+          <a href=""><i class="fab fa-facebook-square"></i></a>
+          <a href=""><i class="fab fa-twitter"></i></a>
+          <a href=""><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </nav>
+    </header>
+
+    <!-- menu desktop -->
+    <div class="menu-respon">
+      <div class="header-nav-inner">
+        <div class="header-nav-menu">
+          <i class="fal fa-times icon-header-menu" aria-hidden="true"></i>
+          <span>ĐÓNG</span>
+        </div>
+        <div class="header-block">
+          <i class="fal fa-user header-block-user icon-header-menu"></i>
+          <i class="fal fa-shopping-cart header-block-cart icon-header-menu"></i>
+        </div>
       </div>
-      <section class="main-detail ">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-9">
-              <div class="content new-inner">
-                <h1 class="content-title">Mẫu giường có ngăn kéo - giải pháp tiết kiệm diện tích phòng ngủ</h1>
-                <p class="create-time"><img class="m-0" srcset="./img/time-circle.png 2x" alt=""><span>2/11/2021</span>
-                </p>
-                <div class="content-desc">
-                  Bạn đang tìm kiếm những ý tưởng decor phòng ngủ nhỏ? Bạn đang không biết phải tự trang trí phòng ngủ
-                  nhỏ của mình sao cho đẹp mà không chật chội?...
-                </div>
-                <div class="content-main">
-                  <img src="./img/new-detail-1.png" alt="">
-                  <p>Thấu hiểu được những hoang mang, bối rối mà các gia chủ đang gặp phải khi sở hữu phòng ngủ diện
-                    tích nhỏ. Mạnh Hệ đã tuyển chọn 10+ cách decor phòng ngủ nhỏ đẹp, đơn giản mà những bạn muốn tiết
-                    kiệm chi phí vẫn có thể áp dụng được, để biến hóa phòng ngủ nhỏ hẹp thành nơi nghỉ ngơi vô cùng
-                    tuyệt vời nhé!</p>
-                  <h4>Những món đồ nội thất không thể thiếu trong decor phòng ngủ</h4>
-                  <p>Để decor một căn phòng ngủ đẹp, trước tiên bạn phải có một phòng ngủ tiện nghi, đáp ứng được nhu
-                    cầu sinh hoạt và đảm bảo công năng sử dụng. Chính vì vậy, bạn cần lưu ý đến một số điểm sau khi lựa
-                    chọn những món đồ nội thất có bản cho phòng ngủ nhỏ:</p>
-                  <p><strong>Giường ngủ:</strong> là món đồ nội thất chính để đáp ứng nhu cầu nghỉ ngơi, bạn cần lựa
-                    chọn cho mình một
-                    chiếc giường ngủ thoải mái, an toàn sức khỏe với chất liệu gỗ công nghiệp hoặc gỗ tự nhiên. Vì diện
-                    tích phòng nhỏ, nên bạn có thể cân nhắc trải nệm để ngủ hoặc chọn kích thước giường đơn 1m2 nếu bạn
-                    ở một mình hoặc giường đôi 1m6 cho hai người.</p>
-                  <img srcset="./img/project-desc-1.png 2x" alt="">
-                  <p><strong>Tủ quần áo</strong>: cũng là món đồ nội thất quan trọng không kém, chiếc tủ quần áo sẽ giúp
-                    bạn “xử gọn” những món đồ linh tinh và trưng bày những bộ quần áo mình yêu thích thật ngăn nắp. Đối
-                    với phòng ngủ nhỏ, bạn có thể sắm những chiếc tủ nhựa nhỏ nhắn để đựng quần áo xếp, hoặc tủ quần áo
-                    2 cánh để treo quần áo mà không chiếm quá nhiều diện tích.</p>
-                  <p><strong>Tủ quần áo</strong>: cũng là món đồ nội thất quan trọng không kém, chiếc tủ quần áo sẽ giúp
-                    bạn “xử gọn” những món đồ linh tinh và trưng bày những bộ quần áo mình yêu thích thật ngăn nắp. Đối
-                    với phòng ngủ nhỏ, bạn có thể sắm những chiếc tủ nhựa nhỏ nhắn để đựng quần áo xếp, hoặc tủ quần áo
-                    2 cánh để treo quần áo mà không chiếm quá nhiều diện tích.</p>
-                  <img srcset="./img/new-detail-2.png 2x" alt="">
-                  <h4>10+ cách decor phòng ngủ nhỏ đơn giản mà đẹp ngất ngây</h4>
-                  <h5>1. Phối màu sơn tường decor phòng ngủ nhỏ sáng tạo</h5>
-                  <p>Vừa mang vẻ đẹp sáng tạo, vừa không chiếm nhiều diện tích, cách sử dụng màu sơn tường sáng tạo, phá
-                    cách là một trong những ý tưởng thông minh được ứng dụng nhiều nhất khi decor phòng ngủ nhỏ hẹp. Bạn
-                    có thể các tông màu pastel với các gam nóng lạnh hài hòa, hay phối các gam màu tương phản cực kỳ độc
-                    đáo.</p>
-                  <img srcset="./img/project-desc-2.png 2x" class="mb-20" style="height: 660px;" alt="">
-                  <img srcset="./img/project-desc-3.png 2x" class="mt-20" style="height: 660px;" alt="">
-                  <p>Tuy nhiên, cách decor phòng ngủ với màu sơn tường sáng tạo này chỉ thực sự phù hợp với các bạn có
-                    hoa tay và gu thẩm mỹ riêng thì mới có thể tự trang trí phòng ngủ cho mình. Còn nếu bạn là cô nàng
-                    vụn về, thì hãy thuê một đơn vị chuyên thiết kế nội thất phòng ngủ cho an toàn nhé!</p>
-                  <h5 class="mt-30">2. Decor phòng ngủ nhỏ tận dụng ánh sáng tự nhiên</h5>
-                  <p>Tối ưu ánh sáng tự nhiên cho phòng ngủ nhỏ sẽ mang lại không gian thoáng đãng, cảm giác thoải mái
-                    và rất hiệu quả trong việc tái tạo năng lượng cho chủ nhân với không khí trong lành nhờ vào ánh sáng
-                    ban mai. Nếu phòng ngủ bạn không có cửa sổ, hãy cố gắng sử dụng ánh sáng đèn để decor phòng ngủ hợp
-                    lí, tránh đề căn phòng quá u tối, bí bách nhé!</p>
-                  <img srcset="./img/new-detail-3.png 2x" alt="">
-                  <h5>3. Tự trang trí phòng ngủ nhỏ với đồ handmade</h5>
-                  <p>Đồ handmade dường như là trào lưu không bao giờ hết HOT trong trang trí phòng ngủ. Bởi những món đồ
-                    tự làm sẽ mang nét đẹp độc nhất, mang nét riêng duy nhất do chúng ta tự sáng tạo theo ý tưởng của
-                    mình. Decor phòng ngủ nhỏ bằng đồ handmade vừa giúp tiết kiệm chi phí, vừa ghi đậm dấu ấn riêng
-                    trong không gian của mình.</p>
-                  <img src="./img/new-detail-4.png" alt="">
-                  <p>Bắt kịp trào lưu của giới trẻ, những chiếc đèn led, đèn neon uốn chữ đang trở thành xu hướng được
-                    sử dụng nhiều trong trang trí phòng ngủ nhỏ cực chill. Chúng không những có thể thay thế cho những
-                    loại đèn thông thường, mà còn mang lại vẻ đẹp mới lạ, không gian huyền ảo vô cùng thích thú. <br>
-                    Mặc dù decor phòng ngủ chill sẽ mang lại sự thú vị cho chủ nhân căn phòng, nhưng bạn cũng đừng quên
-                    trang trí thêm hệ đèn màu trắng để đem đến không gian nghỉ ngơi thoải mái, nhẹ nhàng hơn nhé. Bởi
-                    nếu sinh hoạt trong phòng ngủ quá tối như thế này sẽ ở một khoảng thời gian dài dễ dẫn đến những cảm
-                    xúc tiêu cực.</p>
-                </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-2 offset-md-2 pr-0">
+            <ul class="menu">
+              <li class="menu-item active">
+                <a href="/" class="menu-link">Trang chủ</a>
+              </li>
+              <li class="menu-item">
+                <a href="#" class="menu-link">Giới thiệu</a>
+              </li>
+              <li class="menu-item">
+                <a href="./product-cate.html" class="menu-link">Sản phẩm</a>
+              </li>
+              <li class="menu-item">
+                <a href="./news.html" class="menu-link">Tin tức</a>
+              </li>
+            </ul>
+            <form class="menu-respon-search" action="action_page.php">
+              <input type="text" placeholder="Từ khóa" name="search" />
+              <button type="submit"><i class="fal fa-search"></i></button>
+            </form>
+          </div>
+          <div class="col-md-4 offset-md-3">
+            <div class="menu-respon-info">
+              <h3 class="title">Liên hệ</h3>
+              <p class="location">
+                Tầng 7, toà nhà Citilight, 45 Võ Thị Sáu, Phường Đa Kao, Quận
+                1, TPHCM
+              </p>
+              <a class="tel" href="">T: (888) 832-0051</a>
+              <a class="mail" href="">E: info@gmail.com</a>
+              <div class="social">
+                <a href=""><i class="fab fa-facebook-square"></i></a>
+                <a href=""><i class="fab fa-twitter"></i></a>
+                <a href="" class="mr-0"><i class="fab fa-linkedin-in"></i></a>
               </div>
-            </div>
-            <div class="col-md-3">
-              <div class="sidebar">
-                <h3 class="sidebar-title">
-                  Tin tức nổi bật
-                </h3>
-                <div class="list-post">
-                  <div class="card-post-horizontal">
-                    <a href="" class="thumbnail">
-                      <img srcset="./img/project-highlight-1.png 2x" alt="">
-                    </a>
-                    <div class="content">
-                      <a href="" class="title">Thiet ke noi that chung cu Kingdom voi mau</a>
-                      <p class="create-time"><img srcset="./img/time-circle.png 2x" alt=""><span>2/11/2021</span></p>
-                    </div>
-                  </div>
-                  <div class="card-post-horizontal">
-                    <a href="" class="thumbnail">
-                      <img srcset="./img/project-highlight-2.png 2x" alt="">
-                    </a>
-                    <div class="content">
-                      <a href="" class="title">Thiet ke noi that chung cu Kingdom voi mau</a>
-                      <p class="create-time"><img srcset="./img/time-circle.png 2x" alt=""><span>2/11/2021</span></p>
-                    </div>
-                  </div>
-                  <div class="card-post-horizontal">
-                    <a href="" class="thumbnail">
-                      <img srcset="./img/new-detail-1.png 2x" alt="">
-                    </a>
-                    <div class="content">
-                      <a href="" class="title">Thiet ke noi that chung cu Kingdom voi mau</a>
-                      <p class="create-time"><img srcset="./img/time-circle.png 2x" alt=""><span>2/11/2021</span></p>
-                    </div>
-                  </div>
-                  <div class="card-post-horizontal">
-                    <a href="" class="thumbnail">
-                      <img srcset="./img/new-detail-2.png 2x" alt="">
-                    </a>
-                    <div class="content">
-                      <a href="" class="title">Thiet ke noi that chung cu Kingdom voi mau</a>
-                      <p class="create-time"><img srcset="./img/time-circle.png 2x" alt=""><span>2/11/2021</span></p>
-                    </div>
-                  </div>
-                  <div class="card-post-horizontal">
-                    <a href="" class="thumbnail">
-                      <img srcset="./img/new-detail-3.png 2x" alt="">
-                    </a>
-                    <div class="content">
-                      <a href="" class="title">Thiet ke noi that chung cu Kingdom voi mau</a>
-                      <p class="create-time"><img srcset="./img/time-circle.png 2x" alt=""><span>2/11/2021</span></p>
-                    </div>
-                  </div>
-                  <div class="card-post-horizontal">
-                    <a href="" class="thumbnail">
-                      <img srcset="./img/new-detail-4.png 2x" alt="">
-                    </a>
-                    <div class="content">
-                      <a href="" class="title">Thiet ke noi that chung cu Kingdom voi mau</a>
-                      <p class="create-time"><img srcset="./img/time-circle.png 2x" alt=""><span>2/11/2021</span></p>
-                    </div>
-                  </div>
-                  <div class="card-post-horizontal">
-                    <a href="" class="thumbnail">
-                      <img srcset="./img/project-highlight-1.png 2x" alt="">
-                    </a>
-                    <div class="content">
-                      <a href="" class="title">Thiet ke noi that chung cu Kingdom voi mau</a>
-                      <p class="create-time"><img srcset="./img/time-circle.png 2x" alt=""><span>2/11/2021</span></p>
-                    </div>
-                  </div>
-                </div>
-                <div class="see-more text-center">
-                  <button class="btn-text">
-                    <a href="">Xem them</a>
-                  </button>
-                </div>
+              <div class="lang">
+                <div class="lang-title">NGÔN NGỮ</div>
+                <span class="active">VI</span>
+                <span>EN</span>
               </div>
             </div>
           </div>
         </div>
-      </section>
-      <section class="new-relative">
-        <div class="container">
-          <h2 class="new-relative-title">Tin tức liên quan</h2>
-          <div class="owl-carousel owl-theme new-relative-slider">
+      </div>
+      <span class="text-overlay"> MENU </span>
+      <img srcset="./img/overlay-menu.png 2x" class="image-overlay" alt="" />
+    </div>
 
-            <div class="item">
-              <div class="card-post">
-                <a href="" class="thumbnail br-20">
-                  <img src="https://source.unsplash.com/random" alt="" />
-                </a>
-                <p class="time"><img srcset="./img/time-circle.png 2x" alt=""><span>Thứ 2, 7/5/2021</span></p>
-                <a href="" class="title">Tổng hợp mẫu cầu thang đẹp theo xu hướng mới nhất năm 2021</a>
-                <p class="desc">
-                  Được thành lập từ ngày 12/8/2009. Mã số doanh nghiệp: 0200964322. Với hơn 10 năm thành lập đến nay,
-                  chúng tôi không ngừng nỗ lực mở rộng..
-                </p>
+    <div class="wp-breadcumb">
+      <nav aria-label="breadcrumb">
+        <div class="container">
+          <ol class="breadcrumb p-0 mb-0">
+            <li class="breadcrumb-item"><a href="/">Trang chủ</a></li>
+            <li class="breadcrumb-item active" aria-current="page">
+              Tin tức
+            </li>
+          </ol>
+        </div>
+      </nav>
+    </div>
+
+    <div class="new-wrapper">
+      <div class="container">
+        <div class="new-wrapper-inner">
+          <div class="new-head">
+            <h1 class="new-title">Chuyên gia tiết lộ những điều chưa biết về bơ thực vật</h1>
+            <div class="new-sub">
+              <p class="new-create">23 Sep, 2021</p>
+              <div class="new-share">
+                <a href=""><img srcset="./img/facebook.png 2x" alt=""></a>
+                <a href=""><img srcset="./img/insta.png 2x" alt=""></a>
+                <a href=""><img srcset="./img/twiter.png 2x" alt=""></a>
               </div>
             </div>
-            <div class="item">
-              <div class="card-post">
-                <a href="" class="thumbnail br-20">
-                  <img src="https://source.unsplash.com/random" alt="" />
-                </a>
-                <p class="time"><img srcset="./img/time-circle.png 2x" alt=""><span>Thứ 2, 7/5/2021</span></p>
-                <a href="" class="title">Mẫu giường cho bé gái và bé trai đẹp hiện đại nhất năm 2021</a>
-                <p class="desc">
-                  Được thành lập từ ngày 12/8/2009. Mã số doanh nghiệp: 0200964322. Với hơn 10 năm thành lập đến nay,
-                  chúng tôi không ngừng nỗ lực mở rộng..
-                </p>
-              </div>
+          </div>
+          <div class="new-content">
+            <img class="new-content-thumbnail" src="./img/newest.png" alt="">
+            <div class="new-content-main">
+              <p>
+                Chuyên gia dinh dưỡng, bác sĩ CKII Đỗ Thị Ngọc Diệp chia sẻ nhiều thông tin hữu ích về bơ thực vật
+                (margarine) và cách dùng.
+              </p>
+              <p>Bơ thực vật ngày càng giữ vai trò quan trọng trong bữa ăn gia đình Việt nhưng nhiều người chưa nắm rõ
+                nguồn gốc và cách sử dụng đúng chuẩn. Theo Chuyên gia CKII Ngọc Diệp - Phó Chủ tịch Hội Dinh dưỡng Việt
+                Nam, vị bơ thực vật vừa béo, vừa thơm, được nhiều thế hệ yêu thích vì giúp tăng độ hấp dẫn cho các món
+                ăn
+                quen thuộc như: bắp xào bơ, bánh mì bơ đường, bắp rang bơ, bít-tết bơ tỏi...</p>
+              <p>"Tuy nhiên, không ít người tiêu dùng còn quan ngại, thắc mắc về nguồn gốc xuất xứ, hàm lượng - tần
+                suất,
+                cách sử dụng và quy trình sản xuất của bơ thực vật", bác sĩ nói.
+              </p>
+              <p>Bơ thực vật (margarine) có nguồn gốc từ một số dầu thực vật và được sản xuất qua quá trình hydro hóa để
+                chuyển từ dạng lỏng thành dạng cứng hoặc dẻo và có thể đóng thành bánh. Hiểu đơn giản là thực phẩm này
+                không làm từ sữa mà có thành phần là dầu thực vật, chứa nhiều axít béo chưa bão hòa và không chứa
+                cholesterol.
+              </p>
+              <p>Theo Hiệp hội Tim mạch Mỹ (American Heart Association/AHA) chất béo không bão hòa nhiều nối đôi có thể
+                làm giảm nồng độ cholesterol xấu trong máu, giảm nguy cơ bệnh tim mạch và đột quỵ. Sự phát triển của
+                công
+                nghệ hiện đại giúp các nhà sản xuất loại bỏ chất béo chuyển hóa trans fat trong bơ thực vật về 0% theo
+                tiêu chuẩn FDA. Thực phẩm này còn chứa vitamin A và E tự nhiên, giúp chống oxy hóa, tăng cường khả năng
+                đề
+                kháng cho cơ thể.</p>
             </div>
-            <div class="item">
-              <div class="card-post">
-                <a href="" class="thumbnail br-20">
-                  <img src="https://source.unsplash.com/random" alt="" />
-                </a>
-                <p class="time"><img srcset="./img/time-circle.png 2x" alt=""><span>Thứ 2, 7/5/2021</span></p>
-                <a href="" class="title">Ý tưởng thiết kế phòng ngủ không cần giường mới lạ ít ai biết</a>
-                <p class="desc">
-                  Được thành lập từ ngày 12/8/2009. Mã số doanh nghiệp: 0200964322. Với hơn 10 năm thành lập đến nay,
-                  chúng tôi không ngừng nỗ lực mở rộng..
-                </p>
-              </div>
-            </div>
-            <div class="item">
-              <div class="card-post">
-                <a href="" class="thumbnail br-20">
-                  <img src="https://source.unsplash.com/random" alt="" />
-                </a>
-                <p class="time"><img srcset="./img/time-circle.png 2x" alt=""><span>Thứ 2, 7/5/2021</span></p>
-                <a href="" class="title">Tổng hợp mẫu cầu thang đẹp theo xu hướng mới nhất năm 2021</a>
-                <p class="desc">
-                  Được thành lập từ ngày 12/8/2009. Mã số doanh nghiệp: 0200964322. Với hơn 10 năm thành lập đến nay,
-                  chúng tôi không ngừng nỗ lực mở rộng..
-                </p>
-              </div>
-            </div>
-            <div class="item">
-              <div class="card-post">
-                <a href="" class="thumbnail br-20">
-                  <img src="https://source.unsplash.com/random" alt="" />
-                </a>
-                <p class="time"><img srcset="./img/time-circle.png 2x" alt=""><span>Thứ 2, 7/5/2021</span></p>
-                <a href="" class="title">Mẫu giường cho bé gái và bé trai đẹp hiện đại nhất năm 2021</a>
-                <p class="desc">
-                  Được thành lập từ ngày 12/8/2009. Mã số doanh nghiệp: 0200964322. Với hơn 10 năm thành lập đến nay,
-                  chúng tôi không ngừng nỗ lực mở rộng..
-                </p>
-              </div>
-            </div>
-            <div class="item">
-              <div class="card-post">
-                <a href="" class="thumbnail br-20">
-                  <img src="https://source.unsplash.com/random" alt="" />
-                </a>
-                <p class="time"><img srcset="./img/time-circle.png 2x" alt=""><span>Thứ 2, 7/5/2021</span></p>
-                <a href="" class="title">Ý tưởng thiết kế phòng ngủ không cần giường mới lạ ít ai biết</a>
-                <p class="desc">
-                  Được thành lập từ ngày 12/8/2009. Mã số doanh nghiệp: 0200964322. Với hơn 10 năm thành lập đến nay,
-                  chúng tôi không ngừng nỗ lực mở rộng..
-                </p>
+            <p class="source-new">Nguồn: VnExpress</p>
+          </div>
+          <div class="pagination-short">
+            <a href="" class="pagination-prev">
+              <img srcset="./img/arrow-left-black.png 2x" alt="">
+              <span>Bài trước</span>
+            </a>
+            <a href="" class="pagination-next">
+              <span>Bài tiếp</span>
+              <img srcset="./img/arrow-right-black.png 2x" alt="">
+            </a>
+          </div>
+          <div class="new-relative">
+            <h4 class="new-relative-title">Có thể bạn quan tâm</h4>
+            <div class="new-relative-item">
+              <a href="" class="new-relative-thumbnail">
+                <img src="./img/new-relative.png" alt="">
+              </a>
+              <div class="new-relative-info">
+                <span>Sep 23, 2021</span>
+                <h4><a href="">Nên ăn hoa quả lúc đói
+                    hay no?</a></h4>
               </div>
             </div>
           </div>
         </div>
-      </section>
-    </main>
-    <footer class="footer" style="height: 300px;"></footer>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <div class="d-flex justify-content-between flex-column h-100">
+              <a href="/" class="footer-thumbnail d-block"><img srcset="./img/logo-footer.png 2x" alt="logo-footer"></a>
+              <div class="footer-social-copyright">
+                <div class="footer-social">
+                  <a href=""><i class="fab fa-facebook-square"></i></a>
+                  <a href=""><i class="fab fa-twitter"></i></a>
+                  <a href="" class="pr-0"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+                <p class="footer-copyright">
+                  &copy; lamtayfoof. ALL RIGHTS RESERVED.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="footer-cate footer-list">
+              <h4 class="footer-title">Danh mục</h4>
+              <ul>
+                <li><a href="./product-cate.html">Bia rượu</a></li>
+                <li><a href="./product-cate.html">Bơ đậu phộng</a></li>
+                <li><a href="./product-cate.html">Cá hộp</a></li>
+                <li><a href="./product-cate.html">Hải sản</a></li>
+                <li><a href="./product-cate.html">Nước khoáng</a></li>
+                <li><a href="./product-cate.html">Thịt Pate</a></li>
+                <li><a href="./product-cate.html">Trai ô liu</a></li>
+                <li><a href="./product-cate.html">Thịt bò</a></li>
+              </ul>
+              <div class="see-more">
+                <a href="">Xem tất cả
+                  <img srcset="./img/arrow-right.png 2x" alt="" /></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="footer-info footer-list">
+              <h4 class="footer-title">Thông tin hỗ trợ</h4>
+              <ul>
+                <li><a href="">Về chúng tôi</a></li>
+                <li><a href="">chính sách mua hàng</a></li>
+                <li><a href="">chính sách đổi trả</a></li>
+                <li><a href="">điều khoản</a></li>
+                <li><a href="">hướng dẫn mua hàng</a></li>
+                <li><a href="">quy định mua hàng</a></li>
+                <li><a href="">hướng dẫn thanh toán</a></li>
+                <li><a href="">chính sách bảo mật </a></li>
+              </ul>
+            </div>
+
+          </div>
+          <div class="col-md-3">
+            <div class="footer-contact">
+              <h4 class="footer-title">Liên hệ</h4>
+              <p class="location">Tầng 7, toà nhà Citilight, 45 Võ Thị Sáu,
+                Phường Đa Kao, Quận 1, TPHCM</p>
+              <p class="tel"><a href="tel: (888) 123-456">T: (888) 123-456</a></p>
+              <p class="email"><a href="to:INFO@GMAIL.COM">E: INFO@GMAIL.COM</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
   </div>
-
   <script src="libs/jquery-3.4.1.min.js"></script>
-  <script src="libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   <script src="libs/OwlCarousel/owl.carousel.min.js"></script>
   <script src="js/main.js"></script>
 </body>

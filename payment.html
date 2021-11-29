@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Payment Page</title>
+  <link rel="stylesheet" href="./css/reset.css" />
+  <!-- <link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css" /> -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+  <!-- font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@300;500;600;700&display=swap"
+    rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="libs/OwlCarousel/assets/owl.carousel.min.css" />
+  <link rel="stylesheet" href="libs/OwlCarousel/assets/owl.theme.default.min.css" />
+  <link rel="stylesheet" href="libs/OwlCarousel/assets/owl.theme.green.min.css" />
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <nav class="header-nav ">
+        <div class="header-nav-wp">
+          <div class="header-nav-inner">
+            <div class="header-nav-menu">
+              <i class="fal fa-bars icon-header-menu" aria-hidden="true"></i>
+              <span>MENU</span>
+            </div>
+            <div class="header-nav-logo"></div>
+            <div class="header-block">
+              <i class="fal fa-user header-block-user icon-header-menu"></i>
+              <i class="
+                    fal
+                    fa-shopping-cart
+                    icon-header-menu
+                  "></i>
+              <span class="header-block-lang mr-0">VI
+                <div class="list-lang">
+                  <span class="active">VI</span>
+                  <span>EN</span>
+                </div>
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="owl-carousel owl-theme slide-header-home">
+          <div class="item">
+            <img src="./img/slide-home-1.png" alt="" />
+          </div>
+          <div class="item">
+            <img src="https://source.unsplash.com/random" alt="" />
+          </div>
+          <div class="item">
+            <img src="https://source.unsplash.com/random" alt="" />
+          </div>
+          <div class="item">
+            <img src="https://source.unsplash.com/random" alt="" />
+          </div>
+        </div>
+        <div class="header-nav-title">
+          <h1>Chúng tôi luôn cung cấp những sản phẩm tốt nhất.</h1>
+          <button class="button-primary"><a href="">KHÁM PHÁ</a></button>
+        </div>
+        <div class="header-social">
+          <a href=""><i class="fab fa-facebook-square"></i></a>
+          <a href=""><i class="fab fa-twitter"></i></a>
+          <a href=""><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </nav>
+    </header>
+
+    <!-- menu desktop -->
+    <div class="menu-respon">
+      <div class="header-nav-inner">
+        <div class="header-nav-menu">
+          <i class="fal fa-times icon-header-menu" aria-hidden="true"></i>
+          <span>ĐÓNG</span>
+        </div>
+        <div class="header-block">
+          <i class="fal fa-user header-block-user icon-header-menu"></i>
+          <i class="fal fa-shopping-cart header-block-cart icon-header-menu"></i>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-2 offset-md-2 pr-0">
+            <ul class="menu">
+              <li class="menu-item active">
+                <a href="/" class="menu-link">Trang chủ</a>
+              </li>
+              <li class="menu-item">
+                <a href="#" class="menu-link">Giới thiệu</a>
+              </li>
+              <li class="menu-item">
+                <a href="./product-cate.html" class="menu-link">Sản phẩm</a>
+              </li>
+              <li class="menu-item">
+                <a href="./news.html" class="menu-link">Tin tức</a>
+              </li>
+            </ul>
+            <form class="menu-respon-search" action="action_page.php">
+              <input type="text" placeholder="Từ khóa" name="search" />
+              <button type="submit"><i class="fal fa-search"></i></button>
+            </form>
+          </div>
+          <div class="col-md-4 offset-md-3">
+            <div class="menu-respon-info">
+              <h3 class="title">Liên hệ</h3>
+              <p class="location">
+                Tầng 7, toà nhà Citilight, 45 Võ Thị Sáu, Phường Đa Kao, Quận
+                1, TPHCM
+              </p>
+              <a class="tel" href="">T: (888) 832-0051</a>
+              <a class="mail" href="">E: info@gmail.com</a>
+              <div class="social">
+                <a href=""><i class="fab fa-facebook-square"></i></a>
+                <a href=""><i class="fab fa-twitter"></i></a>
+                <a href="" class="mr-0"><i class="fab fa-linkedin-in"></i></a>
+              </div>
+              <div class="lang">
+                <div class="lang-title">NGÔN NGỮ</div>
+                <span class="active">VI</span>
+                <span>EN</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <span class="text-overlay"> MENU </span>
+      <img srcset="./img/overlay-menu.png 2x" class="image-overlay" alt="" />
+    </div>
+
+    <div class="wp-breadcumb">
+      <nav aria-label="breadcrumb">
+        <div class="container">
+          <ol class="breadcrumb p-0 mb-0">
+            <li class="breadcrumb-item"><a href="">Trang chủ</a></li>
+            <li class="breadcrumb-item"><a href="">Giỏ hàng</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Thanh toán</li>
+          </ol>
+        </div>
+      </nav>
+    </div>
+
+    <section class="payment-wrapper">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <form class="payment-info">
+              <h1 class="title">Thanh toán</h1>
+              <div class="person-info payment-block">
+                <div class="d-flex justify-content-between align-item-center">
+                  <h3 class="title-field">Thông tin người nhận</h3>
+                  <p class="title-field-sub">Tôi có tài khoản</p>
+                </div>
+                <div class="input-field">
+                  <input type="text" placeholder="Họ tên">
+                  <img srcset="./img/checked.png 2x" alt="">
+                </div>
+                <div class="input-field field-double mb-0">
+                  <input type="email" placeholder="Email">
+                  <input type="text" placeholder="Số điện thoại">
+                </div>
+              </div>
+
+              <div class="address-recieve payment-block">
+                <h3 class="title-field">Địa chỉ giao hàng</h3>
+                <div class="select-field">
+                  <select class="form-control" id="exampleFormControlSelect1">
+                    <option>Tỉnh/TP</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                  </select>
+                </div>
+                <div class="select-field">
+                  <select class="form-control" id="exampleFormControlSelect1">
+                    <option>Quận huyện</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                  </select>
+                </div>
+                <div class="select-field">
+                  <select class="form-control" id="exampleFormControlSelect1">
+                    <option>Phường/xã</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                  </select>
+                </div>
+                <div class="input-field">
+                  <input type="text" placeholder="Địa chỉ cụ thể">
+                </div>
+              </div>
+
+              <div class="time-delivery payment-block">
+                <h3 class="title-field">Thanh toán</h3>
+                <div class="select-field field-double">
+                  <select class="form-control" id="exampleFormControlSelect1">
+                    <option>Chọn ngày giao</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                  </select>
+                  <select class="form-control" id="exampleFormControlSelect1">
+                    <option>Chọn giờ giao</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="type-payment payment-block">
+                <h3 class="title-field">Hình thức thanh toán</h3>
+                <div class="radio-field">
+                  <div class="form-check">
+                    <input class="d-none" type="radio" name="type-payment" id="cod" value="cod" checked>
+                    <label class="" for="cod">
+                      COD (Thanh toán sau khi nhận hàng)
+                    </label>
+                  </div>
+                </div>
+                <div class="radio-field">
+                  <div class="form-check">
+                    <input class="d-none" type="radio" name="type-payment" id="vnpay" value="vnpay">
+                    <label class="" for="vnpay">
+                      VNPAY
+                    </label>
+                  </div>
+                  <img srcset="./img/vnpay.png 2x" alt="">
+                </div>
+                <div class="radio-field">
+                  <div class="form-check">
+                    <input class="d-none" type="radio" name="type-payment" id="momo" value="momo">
+                    <label class="" for="momo">
+                      Momo
+                    </label>
+                  </div>
+                  <img srcset="./img/momo.png 2x" alt="">
+                </div>
+                <div class="radio-field">
+                  <div class="form-check">
+                    <input class="d-none" name="type-payment" type="radio" name="type-payment" id="bank" value="bank">
+                    <label class="" for="bank">
+                      Chuyển khoản ngân hàng
+                    </label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="note">
+                <h3 class="title-field">Ghi chú</h3>
+                <textarea name="" placeholder="Nội dung"></textarea>
+              </div>
+              <button type="submit">Tiếp tục</button>
+            </form>
+          </div>
+          <div class="col-md-5">
+            <div class="order-info">
+              <h3 class="title">Thông tin đơn hàng</h3>
+              <div class="order-list">
+                <div class="order-item">
+                  <div class="order-item-hero">
+                    <a href="" class="thumbnail">
+                      <img src="./img/product-7.png" alt="">
+                    </a>
+                    <div class="order-item-desc">
+                      <a href="">Dầu Heinz Beanz</a>
+                      <span>Khối lượng: 250g</span>
+                      <span>Số lượng: 1</span>
+                    </div>
+                  </div>
+                  <div class="order-item-price">
+                    <span>183.000đ</span>
+                  </div>
+                </div>
+                <div class="order-item">
+                  <div class="order-item-hero">
+                    <a href="" class="thumbnail">
+                      <img src="./img/product-9.png" alt="">
+                    </a>
+                    <div class="order-item-desc">
+                      <a href="">Dầu Heinz Beanz</a>
+                      <span>Khối lượng: 250g</span>
+                      <span>Số lượng: 1</span>
+                    </div>
+                  </div>
+                  <div class="order-item-price">
+                    <span>183.000đ</span>
+                  </div>
+                </div>
+              </div>
+              <div class="price-total">
+                <div class="price">
+                  <span>Tạm tính</span>
+                  <span>376.000đ</span>
+                </div>
+                <div class="price price-ship">
+                  <div class="d-flex">
+                    <span>Phí giao hàng</span>
+                    <img srcset="./img/icon-i.png 2x" alt="">
+                  </div>
+                  <span class="price">30.000đ</span>
+                </div>
+              </div>
+              <form action="" class="discount-code">
+                <input type="text" placeholder="Mã giảm giá">
+                <button type="submit">Áp dụng</button>
+              </form>
+              <div class="total-order">
+                <span>Thành tiền</span>
+                <span>376.000đ</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <div class="d-flex justify-content-between flex-column h-100">
+              <a href="/" class="footer-thumbnail d-block"><img srcset="./img/logo-footer.png 2x" alt="logo-footer"></a>
+              <div class="footer-social-copyright">
+                <div class="footer-social">
+                  <a href=""><i class="fab fa-facebook-square"></i></a>
+                  <a href=""><i class="fab fa-twitter"></i></a>
+                  <a href="" class="pr-0"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+                <p class="footer-copyright">
+                  &copy; lamtayfoof. ALL RIGHTS RESERVED.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="footer-cate footer-list">
+              <h4 class="footer-title">Danh mục</h4>
+              <ul>
+                <li><a href="./product-cate.html">Bia rượu</a></li>
+                <li><a href="./product-cate.html">Bơ đậu phộng</a></li>
+                <li><a href="./product-cate.html">Cá hộp</a></li>
+                <li><a href="./product-cate.html">Hải sản</a></li>
+                <li><a href="./product-cate.html">Nước khoáng</a></li>
+                <li><a href="./product-cate.html">Thịt Pate</a></li>
+                <li><a href="./product-cate.html">Trai ô liu</a></li>
+                <li><a href="./product-cate.html">Thịt bò</a></li>
+              </ul>
+              <div class="see-more">
+                <a href="">Xem tất cả
+                  <img srcset="./img/arrow-right.png 2x" alt="" /></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="footer-info footer-list">
+              <h4 class="footer-title">Thông tin hỗ trợ</h4>
+              <ul>
+                <li><a href="">Về chúng tôi</a></li>
+                <li><a href="">chính sách mua hàng</a></li>
+                <li><a href="">chính sách đổi trả</a></li>
+                <li><a href="">điều khoản</a></li>
+                <li><a href="">hướng dẫn mua hàng</a></li>
+                <li><a href="">quy định mua hàng</a></li>
+                <li><a href="">hướng dẫn thanh toán</a></li>
+                <li><a href="">chính sách bảo mật </a></li>
+              </ul>
+            </div>
+
+          </div>
+          <div class="col-md-3">
+            <div class="footer-contact">
+              <h4 class="footer-title">Liên hệ</h4>
+              <p class="location">Tầng 7, toà nhà Citilight, 45 Võ Thị Sáu,
+                Phường Đa Kao, Quận 1, TPHCM</p>
+              <p class="tel"><a href="tel: (888) 123-456">T: (888) 123-456</a></p>
+              <p class="email"><a href="to:INFO@GMAIL.COM">E: INFO@GMAIL.COM</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="libs/jquery-3.4.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="libs/OwlCarousel/owl.carousel.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

@@ -6,24 +6,22 @@
 @import "./base/typography";
 @import "./base/utilities";
 
-@import "./components/title_main";
+@import "./components/title";
 @import "./components/pagination";
-@import "./components/create-time";
-@import "./components/card-post";
-@import "./components/card-post-horizontal";
-@import "./components/product-list";
+@import "./components/breadcrumb";
+@import "./components/card-product";
 @import "./components/buttons";
 
 @import "./layout/header";
 @import "./layout/footer";
 @import "./layout/navigation";
 
-@import "./pages/projects";
-@import "./pages/project-detail";
+@import "./pages/index";
+@import "./pages/product-cate";
+@import "./pages/product-detail";
+@import "./pages/account";
+@import "./pages/payment";
 @import "./pages/news";
 @import "./pages/new-detail";
-@import "./pages/contact";
-@import "./pages/rooms";
-@import "./pages/room-detail";
-@import "./pages/products";
-@import "./pages/product-cate";
+@import "./pages/search";
+@import "./pages/policy";

@@ -1,0 +1,84 @@
+.head-title {
+  font-size: 13px;
+  line-height: 16px;
+  letter-spacing: -0.8px;
+  text-transform: uppercase;
+  color: $color-text-third;
+  margin-bottom: 21px;
+  border-left: 3px solid $secondary-color;
+  padding-left: 10px;
+}
+.slogan {
+  font-weight: 300;
+  font-size: 17px;
+  line-height: 36px;
+  color: $color-text-secondary;
+  margin-bottom: 28px;
+}
+.see-more {
+  a {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 30px;
+    color: #000000;
+  }
+  img {
+    display: inline;
+    padding-left: 11px;
+    position: relative;
+    top: -2px;
+  }
+}
+.title-main {
+  color: $color-text-primary;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 45px;
+  letter-spacing: -0.05em;
+  letter-spacing: -1.8px;
+}
+.title-big {
+  font-size: 48px;
+  line-height: 60px;
+  text-align: center;
+  color: $color-text-primary;
+}
+// @include maxWidth(575px) {
+//   .sub-title {
+//     margin-bottom: 25px;
+//     .bg-left {
+//       .bg-top,
+//       .bg-bottom {
+//         &::before,
+//         &::after {
+//           border-radius: 3px;
+//         }
+//       }
+//       .bg-top {
+//         &::before {
+//           top: -25px;
+//           left: 45px;
+//           @include size(7px, 8px);
+//         }
+//         &::after {
+//           top: -13px;
+//           left: 120px;
+//           @include size(13px);
+//         }
+//       }
+//       .bg-bottom {
+//         &::before {
+//           top: 15px;
+//           left: 85px;
+//           @include size(16px);
+//           border-radius: 4px;
+//         }
+//         &::after {
+//           top: 30px;
+//           left: 30px;
+//           @include size(12px, 13px);
+//         }
+//       }
+//     }
+//   }
+// }

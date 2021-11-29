@@ -1,0 +1,28 @@
+.wp-breadcumb {
+  padding-top: 13px;
+  .breadcrumb {
+    background-color: transparent;
+    &-item {
+      a {
+        color: $color-text-secondary;
+        font-size: 13px;
+        line-height: 16px;
+        letter-spacing: -0.05em;
+      }
+    }
+    &-item.active {
+      color: $color-text-secondary;
+      font-size: 13px;
+      line-height: 16px;
+      letter-spacing: -0.05em;
+      color: $secondary-color;
+    }
+  }
+}
+.breadcrumb-item + .breadcrumb-item::before {
+  color: $color-text-secondary;
+}
+.breadcrumb-item + .breadcrumb-item::before {
+  height: 16px;
+  line-height: 16px;
+}

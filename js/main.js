@@ -1,29 +1,9 @@
-$('.project-relative-slider').owlCarousel({
+$('.slide-header-home').owlCarousel({
   loop: true,
-  margin: 30,
+  margin: 0,
   autoplay: true,
   autoplayTimeout: 993000,
-  nav: true,
-  navText: ['<img srcset="./img/arrow-left-gray.png 2x" alt="" />', '<img srcset="./img/arrow-right.png 2x" alt="" />'],
-  responsive: {
-    0: {
-      items: 2
-    },
-    600: {
-      items: 3
-    },
-    1000: {
-      items: 3
-    }
-  }
-})
-$('.customer-slider').owlCarousel({
-  loop: true,
-  margin: 30,
-  autoplay: true,
-  autoplayTimeout: 3000,
   nav: false,
-  dots: true,
   responsive: {
     0: {
       items: 2
@@ -32,17 +12,18 @@ $('.customer-slider').owlCarousel({
       items: 3
     },
     1000: {
-      items: 5
+      items: 1
     }
   }
 })
-$('.new-relative-slider').owlCarousel({
+$('.slide-product-detail').owlCarousel({
   loop: true,
-  margin: 30,
+  margin: 0,
   autoplay: true,
   autoplayTimeout: 993000,
   nav: true,
-  navText: ['<img srcset="./img/arrow-left-gray.png 2x" alt="" />', '<img srcset="./img/arrow-right.png 2x" alt="" />'],
+  navText: ['<img srcset="./img/arrow-left-gray.png 2x" alt="arrow-left" />', '<img srcset="./img/arrow-right-gray.png 2x" alt="arrow-right" />'],
+  dots: false,
   responsive: {
     0: {
       items: 2
@@ -51,17 +32,19 @@ $('.new-relative-slider').owlCarousel({
       items: 3
     },
     1000: {
-      items: 3
+      items: 1
     }
   }
 })
-$('.room-relative-slider').owlCarousel({
+
+$('.featured-product-slider').owlCarousel({
   loop: true,
-  margin: 30,
+  margin: 0,
   autoplay: true,
   autoplayTimeout: 993000,
+  dots: false,
   nav: true,
-  navText: ['<img srcset="./img/arrow-left-gray.png 2x" alt="" />', '<img srcset="./img/arrow-right.png 2x" alt="" />'],
+  navText: ['<img srcset="./img/arrow-left.png 2x" alt="arrow-left" />', '<img srcset="./img/arrow-right.png 2x" alt="arrow-right" />'],
   responsive: {
     0: {
       items: 2
@@ -74,3 +57,47 @@ $('.room-relative-slider').owlCarousel({
     }
   }
 })
+
+$(document).ready(function () {
+  $(".header-nav-menu").click(function () {
+    $(".wrapper").toggleClass("active-menu");
+    $(".menu-respon").toggleClass("left-0");
+  });
+
+  // show hide password
+  $("#password-current .icon-eye").click(function () {
+    if ($('#password-current input').attr("type") == "text") {
+      $('#password-current input').attr('type', 'password');
+      $('#password-current i').addClass("fa-eye-slash");
+      $('#password-current i').removeClass("fa-eye");
+    } else if ($('#password-current input').attr("type") == "password") {
+      $('#password-current input').attr('type', 'text');
+      $('#password-current i').removeClass("fa-eye-slash");
+      $('#password-current i').addClass("fa-eye");
+    }
+  });
+  $("#password-new .icon-eye").on('click', function () {
+    if ($('#password-new input').attr("type") == "text") {
+      $('#password-new input').attr('type', 'password');
+      $('#password-new i').addClass("fa-eye-slash");
+      $('#password-new i').removeClass("fa-eye");
+    } else if ($('#password-new input').attr("type") == "password") {
+      $('#password-new input').attr('type', 'text');
+      $('#password-new i').removeClass("fa-eye-slash");
+      $('#password-new i').addClass("fa-eye");
+    }
+  });
+
+  $(".btn-update-pass").click(function () {
+    $(".field-info-password > input").addClass("d-none");
+    $(".change-password").addClass("d-block");
+    $(".btn-update-pass").text("Lưu")
+  });
+
+  $('#start-date').datepicker();
+  $('#end-date').datepicker();
+  $('.header-nav-logo').click(function () {
+    alert("ok")
+  })
+});
+

@@ -1,36 +1,21 @@
-.btn-text {
-  background-color: $primary-color;
+.button-primary {
+  background-color: $secondary-color;
   @include transition;
+  border-radius: 2px;
   border: none;
-  min-width: 142px;
-  height: 44px;
+  min-width: 150px;
+  height: 55px;
   text-align: center;
-  border-radius: 20px;
   a {
-  color: #fff;
-  font-size: 14px;
-  font-weight: 600;
-  line-height: 24px;
+    color: $color-text-primary;
+    font-size: 14px;
+    line-height: 17px;
+    font-weight: 400;
+    padding: 10px;
+    display: inline-block;
   }
   &:hover,
   &:focus {
-    outline: none;
-    background-color: #0d9dd3;
-  }
-}
-.btn-text-xs {
-  min-width: 52px;
-  height: 24px;
-  text-align: center;
-  border-radius: 4px;
-  background-color: #eaeaea;
-  color: #54595e;
-  font-size: 12px;
-  font-weight: 400;
-  font-family: "Roboto", sans-serif;
-  border: 0;
-  &:hover,
-  &:focus {
-    outline: none;
+    background-color: $secondary-color-hover;
   }
 }
